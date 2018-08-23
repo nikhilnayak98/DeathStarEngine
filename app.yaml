@@ -1,0 +1,15 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+#- url: /client
+#  static_dir: client
+
+- url: .*  # This regex directs all routes to main.app
+  script: controllers.controllers.app
+
+#libraries:
+#- name: jinja2
+#  version: latest
