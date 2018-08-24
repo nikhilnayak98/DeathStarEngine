@@ -1,4 +1,6 @@
 Flask
+Flask-JWT
+flask_restful
 httplib2
 urllib3
 requests
