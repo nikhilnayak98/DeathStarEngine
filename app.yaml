@@ -8,7 +8,7 @@ handlers:
 #  static_dir: client
 
 - url: .*  # This regex directs all routes to main.app
-  script: controllers.controllers.app
+  script: main.app
 
 #libraries:
 #- name: jinja2

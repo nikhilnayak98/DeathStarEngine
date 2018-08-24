@@ -7,6 +7,9 @@ class Student:
         details_json = json.dumps(self, default=lambda o: o.__dict__)
         return json.loads(details_json)
 
+    def set_headers(self, headers):
+        self.headers = headers
+
     def set_regno(self, regno):
         self.regno = regno
 
@@ -37,8 +40,8 @@ class Student:
     def set_email(self, email):
         self.email = email
 
-    def set_cookie(self, cookie):
-        self.cookie = cookie
+    def get_headers(self):
+        return self.headers
 
     def get_regno(self):
         return self.regno
@@ -69,9 +72,6 @@ class Student:
 
     def get_email(self):
         return self.email
-
-    def get_cookie(self):
-        return self.cookie
 
 
 class Attendance:
